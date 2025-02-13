@@ -1,108 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hrushik Perumalla - Interactive CV</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrushik Perumalla - Interactive CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* styles.css */
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--dark-color);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .header-content {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s forwards;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding: 3rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: var(--primary-color);
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.5s ease;
+        }
+
+        /* Skill Bars */
+        .skill-bar {
+            background: #ddd;
+            border-radius: 4px;
+            margin: 1rem 0;
+            height: 20px;
+        }
+
+        .skill-progress {
+            background: var(--primary-color);
+            height: 100%;
+            border-radius: 4px;
+            transition: width 2s ease;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header id="home">
-    <div class="container header-container">
-      <h1>Hrushik Perumalla</h1>
-      <p>Data Engineer | Web Developer | Machine Learning Enthusiast</p>
-      <div class="header-buttons">
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="./CV_Hrushik_Perumalla.pdf" class="btn" download>Download CV</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am a passionate Data Engineer with expertise in Power BI, Machine Learning (Azure), Snowflake, and Cloud Administration tasks (GCP & AWS). I enjoy solving complex problems through innovative solutions.</p>
-      <ul class="personal-info">
-        <li><strong>Location:</strong> Magdeburg, Germany</li>
-        <li><strong>Email:</strong> hrushikperumalla@gmail.com</li>
-        <li><strong>Phone:</strong> +4917672520284</li>
-        <li><strong>LinkedIn:</strong> [<a href="#">Your LinkedIn Profile</a>]</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Professional Experience Section -->
-  <section id="experience">
-    <div class="container">
-      <h2>Professional Experience</h2>
-      <div class="timeline">
-        <!-- Job 1 -->
-        <div class="timeline-item">
-          <h3>Data Engineer - Siemens AG</h3>
-          <p><strong>August 2022 - Present</strong></p>
-          <ul>
-            <li>Worked with Power Apps, Power BI (DAX), Azure ML, Snowflake.</li>
-            <li>Handled predictive analysis and cloud administration tasks (GCP & AWS).</li>
-          </ul>
+    <header>
+        <div class="container header-content">
+            <h1>Hrushik Perumalla</h1>
+            <p>Data Engineer | ML Enthusiast | Full Stack Developer</p>
+            <div class="header-buttons">
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="CV_Hrushik_Perumalla.pdf" class="btn" download>Download CV</a>
+            </div>
         </div>
+    </header>
 
-        <!-- Job 2 -->
-        <div class="timeline-item">
-          <h3>Strategic Assistance - FAU</h3>
-          <p><strong>March 2022 - February 2023</strong></p>
-          <ul>
-            <li>Worked as a Web Developer for the Ai4Gov Project.</li>
-            <li>Strategic assistance for development of Ai4Gov.</li>
-          </ul>
+    <section id="experience" class="container">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <!-- Experience items will be added here -->
         </div>
+    </section>
 
-        <!-- Job 3 -->
-        <div class="timeline-item">
-          <h3>Developer - Cognizant</h3>
-          <p><strong>June 2019 - August 2021</strong></p>
-          <ul>
-            <li>Developed and deployed applications using agile methodology.</li>
-            <li>Data management in Oracle Database (11g, 20c).</li>
-            <li>Worked as Business Continuity Manager for working projects.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Other sections (Education, Projects, Skills) -->
 
-  <!-- Education Section -->
-  <section id="education">
-    <div class="container">
-      <h2>Education</h2>
-      <ul class="education-list">
-        <li><strong>MSc:</strong> Gisma University of Applied Science, Potsdam, Germany.</li>
-        <li><strong>Bachelor's:</strong> K L University, Vijayawada, India.</li>
-        <!-- Add more education details here -->
-      </ul>
-    </div>
-  </section>
+    <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, { threshold: 0.1 });
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
+            document.querySelectorAll('.timeline-item').forEach((el) => {
+                observer.observe(el);
+            });
 
-      <!-- Project Example -->
-      <div class="project-item">
-        <h3>Scrunchies Hub</h3>
-        <p>A website for a startup company with a focus on sales and marketing strategies.</p>
-        <a href="#" target="_blank">View Project</a><!-- Add project link here -->
-      </div>
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
 
-      <!-- Add more projects here -->
+        // Dynamic content loading
+        const experienceData = [
+            {
+                company: "Siemens AG",
+                position: "Data Engineer",
+                duration: "Aug 2022 - Present",
+                responsibilities: [
+                    "Working with Power Apps, Power BI (DAX), Azure ML, Snowflake",
+                    "Cloud Administration tasks (GCP, AWS)",
+                    "Predictive Analysis and Data Modeling"
+                ]
+            },
+            // Add other experiences similarly
+        ];
 
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    ...
+        const timeline = document.querySelector('.timeline');
+        experienceData.forEach(exp => {
+            const html = `
+                <div class="timeline-item">
+                    <h3>${exp.position} @ ${exp.company}</h3>
+                    <p class="duration">${exp.duration}</p>
+                    <ul>
+                        ${exp.responsibilities.map(res => `<li>${res}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            timeline.insertAdjacentHTML('beforeend', html);
+        });
+    </script>
+</body>
+</html>
