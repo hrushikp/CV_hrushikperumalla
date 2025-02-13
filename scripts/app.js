@@ -2,6 +2,18 @@ const experienceData = [
     {
         company: "Siemens AG",
         position: "Data Engineer",
+        duration: "Aug 2022 - December 2024,
+        location: "Erlangen, Germany",
+        responsibilities: [
+            "Power Apps/Power BI (DAX) development",
+            "Azure Machine Learning implementations",
+            "Snowflake data warehouse management",
+            "Cloud administration (AWS/GCP)"
+        ]
+    },
+    {
+        company: "Cognizant",
+        position: "Developer",
         duration: "Aug 2022 - Present",
         location: "Erlangen, Germany",
         responsibilities: [
