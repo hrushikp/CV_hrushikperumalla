@@ -3,183 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hrushik Perumalla - Interactive CV</title>
+    <title>Hrushik Perumalla - Data Engineer</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* styles.css */
-        :root {
-            --primary-color: #2ecc71;
-            --secondary-color: #27ae60;
-            --dark-color: #2c3e50;
-            --light-color: #ecf0f1;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: var(--light-color);
-            color: var(--dark-color);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Header Styles */
-        header {
-            background: var(--dark-color);
-            color: white;
-            padding: 6rem 0;
-            text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        }
-
-        .header-content {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeUp 1s forwards;
-        }
-
-        /* Timeline Styles */
-        .timeline {
-            position: relative;
-            padding: 3rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background: var(--primary-color);
-        }
-
-        .timeline-item {
-            background: white;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.5s ease;
-        }
-
-        /* Skill Bars */
-        .skill-bar {
-            background: #ddd;
-            border-radius: 4px;
-            margin: 1rem 0;
-            height: 20px;
-        }
-
-        .skill-progress {
-            background: var(--primary-color);
-            height: 100%;
-            border-radius: 4px;
-            transition: width 2s ease;
-        }
-
-        /* Animations */
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <h1>Hrushik Perumalla</h1>
-            <p>Data Engineer | ML Enthusiast | Full Stack Developer</p>
-            <div class="header-buttons">
-                <a href="#contact" class="btn">Contact Me</a>
-                <a href="CV_Hrushik_Perumalla.pdf" class="btn" download>Download CV</a>
+    <!-- Header Section -->
+    <header class="parallax">
+        <div class="container">
+            <div class="header-content">
+                <h1>Hrushik Perumalla</h1>
+                <p>Data Engineer | Machine Learning Specialist | Cloud Expert</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn pulse">Contact Me</a>
+                    <a href="CV_Hrushik_Perumalla.pdf" class="btn secondary" download>Download CV</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="experience" class="container">
-        <h2>Professional Experience</h2>
-        <div class="timeline">
-            <!-- Experience items will be added here -->
+    <!-- Professional Experience -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                <!-- Timeline items will be dynamically added -->
+            </div>
         </div>
     </section>
 
-    <!-- Other sections (Education, Projects, Skills) -->
+    <!-- Technical Skills -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <!-- Skill items will be dynamically added -->
+            </div>
+        </div>
+    </section>
 
-    <script>
-        // script.js
-        document.addEventListener('DOMContentLoaded', () => {
-            // Animate elements on scroll
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if(entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    }
-                });
-            }, { threshold: 0.1 });
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-gallery">
+                <!-- Project cards will be dynamically added -->
+            </div>
+        </div>
+    </section>
 
-            document.querySelectorAll('.timeline-item').forEach((el) => {
-                observer.observe(el);
-            });
+    <!-- Certifications -->
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <!-- Certification badges will be dynamically added -->
+            </div>
+        </div>
+    </section>
 
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-
-        // Dynamic content loading
-        const experienceData = [
-            {
-                company: "Siemens AG",
-                position: "Data Engineer",
-                duration: "Aug 2022 - Present",
-                responsibilities: [
-                    "Working with Power Apps, Power BI (DAX), Azure ML, Snowflake",
-                    "Cloud Administration tasks (GCP, AWS)",
-                    "Predictive Analysis and Data Modeling"
-                ]
-            },
-            // Add other experiences similarly
-        ];
-
-        const timeline = document.querySelector('.timeline');
-        experienceData.forEach(exp => {
-            const html = `
-                <div class="timeline-item">
-                    <h3>${exp.position} @ ${exp.company}</h3>
-                    <p class="duration">${exp.duration}</p>
-                    <ul>
-                        ${exp.responsibilities.map(res => `<li>${res}</li>`).join('')}
-                    </ul>
-                </div>
-            `;
-            timeline.insertAdjacentHTML('beforeend', html);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
