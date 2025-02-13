@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrushik Perumalla - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hrushik Perumalla</h1>
+        <p>Data Engineer | Web Developer | AI Enthusiast</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Data Engineer with experience in Power Apps, Power BI, Machine Learning, Cloud Administration, and Predictive Analysis.</p>
+    </section>
+    
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div>
+            <h3>Siemens AG, Erlangen</h3>
+            <p>Data Engineer (2022 - Present)</p>
+            <ul>
+                <li>Worked with Power Apps, Power BI (DAX), and Snowflake.</li>
+                <li>Managed cloud infrastructure on AWS & GCP.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>FAU, Erlangen</h3>
+            <p>Strategic Assistance (2022 - 2023)</p>
+            <ul>
+                <li>Developed web solutions for AI4Gov.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>M.Sc. in Data Science, AI, and Digital Business - Gisma University, Potsdam (2025)</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Scrunchies Hub</h3>
+            <p>Developed a website for a startup, designed marketing strategies.</p>
+        </div>
+        <div>
+            <h3>Gym Application</h3>
+            <p>Built an ML-based system for predicting exercise & diet plans.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hrushikperumalla@gmail.com">hrushikperumalla@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/hrushik-perumalla-57b295194" target="_blank">Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Hrushik Perumalla</p>
+    </footer>
+</body>
+</html>
