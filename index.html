@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hrushik Perumalla | CV </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hrushik Perumalla | CV</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <img src="assets/profile.jpg" alt="Hrushik Perumalla" class="profile-photo">
-            <h1>Hrushik Perumalla</h1>
-            <p>Data Scientist/Analyst</p>
-            <div class="contact-bar">
-                <span><i class="fas fa-map-marker-alt"></i> Magdeburg, Germany</span>
-                <span><i class="fas fa-phone"></i> +49 176 72520284</span>
-                <span><i class="fas fa-envelope"></i> hrushikperumalla@gmail.com</span>
-            </div>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-container">
+      <img src="assets/profile.jpg" alt="Profile Photo" class="profile-photo">
+      <h1>Hrushik Perumalla</h1>
+      <p class="tagline">Data Engineer | Machine Learning Specialist | Cloud Expert</p>
+      <div class="contact-info">
+        <span><i class="fas fa-map-marker-alt"></i> P Lüneburger Str. 5A, 39106 Magdeburg, Germany</span>
+        <span><i class="fas fa-phone"></i> +49 176 72520284</span>
+        <span><i class="fas fa-envelope"></i> hrushikperumalla@gmail.com</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="assets/cv.pdf" class="btn btn-primary" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <main class="container">
-        <!-- Professional Experience -->
-        <section class="card experience">
-            <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-            <div class="timeline" id="experience-timeline"></div>
-        </section>
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Professional Experience -->
+    <section id="experience" class="section">
+      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+      <div id="experience-timeline" class="timeline"></div>
+    </section>
 
-        <!-- Education -->
-        <section class="card education">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div class="edu-grid" id="education-list"></div>
-        </section>
+    <!-- Academic Profile -->
+    <section id="education" class="section bg-light">
+      <h2><i class="fas fa-graduation-cap"></i> Academic Profile</h2>
+      <ul id="education-list" class="list"></ul>
+    </section>
 
-        <!-- Projects -->
-        <section class="card projects">
-            <h2><i class="fas fa-code"></i> Projects</h2>
-            <div class="project-grid" id="projects-list"></div>
-        </section>
+    <!-- Industrial Training -->
+    <section id="training" class="section">
+      <h2><i class="fas fa-cogs"></i> Industrial Training</h2>
+      <ul id="training-list" class="list"></ul>
+    </section>
 
-        <!-- Skills -->
-        <section class="card skills">
-            <h2><i class="fas fa-tools"></i> Technical Skills</h2>
-            <div class="skill-grid" id="skills-list"></div>
-        </section>
-    </main>
+    <!-- Publications -->
+    <section id="publication" class="section bg-light">
+      <h2><i class="fas fa-book"></i> Publications</h2>
+      <ul id="publication-list" class="list"></ul>
+    </section>
 
-    <script src="scripts/app.js"></script>
+    <!-- Project Profile -->
+    <section id="projects" class="section">
+      <h2><i class="fas fa-code"></i> Project Profile</h2>
+      <div id="projects-grid" class="grid"></div>
+    </section>
+
+    <!-- Skill Set -->
+    <section id="skills" class="section bg-light">
+      <h2><i class="fas fa-tools"></i> Skill Set</h2>
+      <div id="skills-grid" class="grid"></div>
+    </section>
+
+    <!-- Workshops, Seminars & Certifications -->
+    <section id="workshops" class="section">
+      <h2><i class="fas fa-award"></i> Workshops & Certifications</h2>
+      <ul id="workshops-list" class="list"></ul>
+    </section>
+
+    <!-- General Information -->
+    <section id="general-info" class="section bg-light">
+      <h2><i class="fas fa-info-circle"></i> General Information</h2>
+      <ul id="general-info-list" class="list"></ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <h2>Contact</h2>
+      <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">Xing</a></p>
+      <p>&copy; Hrushik Perumalla, 2025</p>
+    </section>
+  </main>
+
+  <script src="scripts/app.js"></script>
 </body>
 </html>
