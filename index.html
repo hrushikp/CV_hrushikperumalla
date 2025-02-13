@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hrushik Perumalla - CV</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hrushik Perumalla - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Hrushik Perumalla</h1>
-        <p>Data Engineer | Web Developer | AI Enthusiast</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Data Engineer with experience in Power Apps, Power BI, Machine Learning, Cloud Administration, and Predictive Analysis.</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div>
-            <h3>Siemens AG, Erlangen</h3>
-            <p>Data Engineer (2022 - Present)</p>
-            <ul>
-                <li>Worked with Power Apps, Power BI (DAX), and Snowflake.</li>
-                <li>Managed cloud infrastructure on AWS & GCP.</li>
-            </ul>
+  <!-- Header Section -->
+  <header id="home">
+    <div class="container">
+      <h1>Hrushik Perumalla</h1>
+      <p>Data Engineer | Web Developer | Machine Learning Enthusiast</p>
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="CV_Hrushik_Perumalla.pdf" class="btn" download>Download CV</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a passionate Data Engineer with expertise in Power BI, Machine Learning (Azure), Snowflake, and Cloud Administration tasks (GCP & AWS). I enjoy solving complex problems through innovative solutions.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Data Engineer - Siemens AG</h3>
+          <p><strong>August 2022 - Present</strong></p>
+          <ul>
+            <li>Worked with Power Apps, Power BI (DAX), Azure ML, Snowflake.</li>
+            <li>Handled predictive analysis and cloud administration tasks.</li>
+          </ul>
         </div>
-        <div>
-            <h3>FAU, Erlangen</h3>
-            <p>Strategic Assistance (2022 - 2023)</p>
-            <ul>
-                <li>Developed web solutions for AI4Gov.</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p>M.Sc. in Data Science, AI, and Digital Business - Gisma University, Potsdam (2025)</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>Scrunchies Hub</h3>
-            <p>Developed a website for a startup, designed marketing strategies.</p>
-        </div>
-        <div>
-            <h3>Gym Application</h3>
-            <p>Built an ML-based system for predicting exercise & diet plans.</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:hrushikperumalla@gmail.com">hrushikperumalla@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/hrushik-perumalla-57b295194" target="_blank">Profile</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Hrushik Perumalla</p>
-    </footer>
+        <!-- Add more experiences here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><i class="fab fa-python"></i><p>Python</p></div>
+        <div class="skill-item"><i class="fas fa-database"></i><p>SQL</p></div>
+        <!-- Add more skills here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Hrushik Perumalla - All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <!-- Add more social links here -->
+    </ul>
+  </footer>
+
 </body>
 </html>
