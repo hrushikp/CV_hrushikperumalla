@@ -5,21 +5,23 @@
 // Professional Experience
 const experienceData = [
   {
-    company: "Siemens AG, Erlangen",
+    company: "Siemens AG, Erlangen, Germany",
     position: "Data Engineer",
-    duration: "Aug 2022 - Present",
+    duration: "Aug 2022 - December 2024",
     responsibilities: [
-      "Working with Power Apps, Power BI (DAX), Machine Learning (Azure), Snowflake, Sharepoint sites, and Predictive Analysis",
-      "Cloud Administration tasks (GCP, AWS)"
+      "Designed, developed, and deployed custom Power Apps and Power BI solutions, utilizing DAX to create complex data models and perform advanced data analysis, resulting in improved business insights and decision-making capabilities.",
+      "Leveraged machine learning capabilities in Azure to develop predictive models, driving business growth through data-driven decision-making and process optimization.",
+      "Managed and maintained cloud administration tasks across multiple platforms, including GCP and AWS, ensuring high availability, scalability, and security of cloud-based data storage and integration solutions, including Snowflake and SharePoint sites."
     ]
   },
   {
-    company: "FAU, Erlangen",
+    company: "FAU, Erlangen, Germany",
     position: "Strategic Assistance",
     duration: "Mar 2022 - Feb 2023",
     responsibilities: [
-      "Web Developer for the Ai4Gov Project",
-      "Provided strategic assistance in developing Ai4Gov"
+      "Developed and maintained the Ai4Gov project website as a Web Developer, ensuring seamless user experience and efficient functionality.",
+      "Provided strategic assistance for the development of Ai4Gov, contributing to the project's overall success and growth.",
+      "Utilized technical expertise to support the integration of Artificial Intelligence for Public Services, enhancing the project's impact and reach."
     ]
   },
   {
@@ -27,9 +29,9 @@ const experienceData = [
     position: "Developer / Business Continuity Manager",
     duration: "Jun 2019 - Aug 2021",
     responsibilities: [
-      "Developed & deployed applications using Agile methodology",
-      "Managed data in Oracle Database (11g, 20c)",
-      "Maintained software and coordinated business continuity"
+      "Designed, developed, and deployed scalable applications for clients using agile methodology, collaborating with cross-functional teams to deliver high-quality results that met client requirements and expectations, utilizing Java, SQL, and PLSQL skills, and leveraging Eclipse, Service Now, Oracle DB, and Siebel CRM tools.",
+      "Managed and maintained large datasets in Oracle Database (11g, 20c), performing complex data analysis, troubleshooting, and optimization to ensure data accuracy, integrity, and system performance, and updated and maintained existing software to ensure seamless operations.",
+      "Worked as Business Continuity Manager, developing and implementing comprehensive continuity plans, conducting risk assessments, and providing training to ensure seamless project operations and minimize downtime in the event of disruptions or outages, ensuring business continuity and minimizing revenue loss."
     ]
   }
 ];
@@ -66,7 +68,8 @@ const publicationData = [
   {
     title: "Hybrid approach for securing IOT DEVICES",
     publication: "International Journal of Innovative Technology and Exploring Engineering (IJITEE)",
-    issue: "Vol-8, Issue-4, Feb 2019"
+    issue: "Vol-8, Issue-4, Feb 2019",
+    link: "https://www.ijitee.org/wp-content/uploads/papers/v8i4/D2668028419.pdf"
   }
 ];
 
