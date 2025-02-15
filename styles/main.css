@@ -63,12 +63,16 @@ body {
   gap: 15px;
   margin-bottom: 20px;
   font-size: 0.9rem;
+  color: white;
+
 }
 
 .contact-info span {
   display: flex;
   align-items: center;
   gap: 5px;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
 .hero-buttons {
@@ -249,4 +253,160 @@ body {
 
 .linkedin-btn:hover {
   background-color: #005582; /* Darker blue on hover */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa; /* Light beige background */
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two-column layout */
+  gap: 40px;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 6px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.designation {
+  color: #6c757d; /* Subtle gray */
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-link {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #0077B5; /* LinkedIn blue for all icons */
+}
+
+.social-link:hover {
+  color: #005582; /* Darker blue on hover */
+}
+
+/* Introduction Section */
+.intro h1 {
+  font-size: 3rem;
+}
+
+.intro p {
+  margin-top: 10px;
+}
+
+.intro-buttons {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #0077B5; /* Blue button */
+}
+
+.btn-secondary {
+  background-color: lightskyblue;
+}
+/* Styling for the Name Heading */
+.hero h2 {
+  font-size: 2.5rem; /* Adjust size for emphasis */
+  font-weight: bold; /* Bold text */
+  color: var(--secondary-color); /* Black text color */
+  text-align: center; /* Center align */
+  margin-top: 20px; /* Add spacing above */
+  margin-bottom: 10px; /* Add spacing below */
+}
+
+/* Hide elements like buttons and navigation in PDF */
+@media print {
+  .btn, nav {
+    display: none;
+  }
+}
+
+/* Ensure proper page breaks */
+.html2pdf__page-break {
+  break-before: always; /* Force a new page */
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: var(--light-color); /* Light background */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: var(--secondary-color); /* Black text */
+}
+
+.contact-value {
+  color: var(--dark-color); /* Darker gray for subtlety */
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  color: var(--primary-color); /* Blue for icons */
+}
+
+.social-link:hover {
+  color: #005582; /* Darker blue on hover */
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+
 }

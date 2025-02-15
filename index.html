@@ -6,55 +6,62 @@
   <title>Hrushik Perumalla | CV</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+
   <!-- Hero Section -->
   <header class="hero">
     <div class="container hero-container">
-      <img src="assets/profile.JPEG" alt="Profile Photo" class="profile-photo">
-      <h1>Hrushik Perumalla</h1>
-      <p class="tagline">Data Scientist/Analyst</p>
-      <div class="contact-info">
-        <span><i class="fas fa-map-marker-alt"></i> Lüneburger Str. 5A, 39106 Magdeburg, Germany</span>
-        <span><i class="fas fa-phone"></i> +49 176 72520284</span>
-        <span><i class="fas fa-envelope"></i> hrushikperumalla@gmail.com</span>
+      <!-- Left Column: Profile Card -->
+      <div class="profile-card">
+        <img src="assets/profile.JPEG" alt="Profile Photo" class="profile-photo">
+        <h2>Hrushik Perumalla</h2>
+        <p class="designation">Data Scientist / Analyst</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/hrushik-perumalla-57b295194/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
       </div>
-      <div class="hero-buttons">
-  <!-- Updated LinkedIn Button -->
-  <a href="https://www.linkedin.com/in/hrushik-perumalla-57b295194/" class="btn linkedin-btn" target="_blank">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
 
-  <!-- Download CV Button -->
-  <a href="assets/cv.pdf" class="btn btn-primary" download>
-    <i class="fas fa-download"></i> Download CV
-  </a>
-</div>
+      <!-- Right Column: Introduction -->
+      <div class="intro">
+        <h1>Hello</h1>
+        <p>Here's who I am & what I do.</p>
+        <div class="intro-buttons">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#" class="btn btn-primary" id="download-cv"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+        <p class="description">
+          I'm a data scientist with expertise in machine learning, data analysis, and cloud computing. I specialize in delivering actionable insights and building scalable solutions.
+        </p>
+      </div>
+    </div>
   </header>
 
-
   <!-- Main Content -->
-  <main class="container">
+  <main id="cv-section" class="container">
     <!-- Professional Experience -->
-    <section id="experience" class="section">
+    <section id="experience" class="section fade-in">
       <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
       <div id="experience-timeline" class="timeline"></div>
     </section>
 
     <!-- Academic Profile -->
-    <section id="education" class="section bg-light">
+    <section id="education" class="section bg-light fade-in">
       <h2><i class="fas fa-graduation-cap"></i> Academic Profile</h2>
       <ul id="education-list" class="list"></ul>
     </section>
 
     <!-- Industrial Training -->
-    <section id="training" class="section">
+    <section id="training" class="section fade-in">
       <h2><i class="fas fa-cogs"></i> Industrial Training</h2>
       <ul id="training-list" class="list"></ul>
     </section>
 
     <!-- Publications -->
-    <section id="publication" class="section bg-light">
+    <section id="publication" class="section bg-light fade-in">
       <h2><i class="fas fa-book"></i> Publications</h2>
       <ul id="publication-list" class="list"></ul>
     </section>
@@ -83,13 +90,42 @@
       <ul id="general-info-list" class="list"></ul>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-      <h2>Contact</h2>
-      <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">Xing</a></p>
+   <section id="contact" class="section contact-section">
+  <div class="container contact-container">
+    <!-- Contact Heading -->
+    <h2>Contact</h2>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <div class="contact-item">
+        <span class="contact-label">Call:</span>
+        <span class="contact-value">+49 176 72520284</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Email:</span>
+        <span class="contact-value">hrushikperumalla@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Follow:</span>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/hrushik-perumalla-57b295194/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
       <p>&copy; Hrushik Perumalla, 2025</p>
-    </section>
-  </main>
+    </footer>
+  </div>
 
   <script src="scripts/app.js"></script>
 </body>

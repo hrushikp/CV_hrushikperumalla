@@ -77,7 +77,7 @@ const publicationData = [
 const projectsData = [
   {
     title: "Scrunchies Hub",
-    description: "Developed a website for a startup including logo design, sales strategy, and CRM management. Currently serving as Managing Partner.",
+    description: "Developed a website for a startup including logo design, sales strategy, and CRM management. Currently working as Managing Partner.",
     link: "http://www.scrunchieshub.com"
   },
   {
@@ -260,3 +260,22 @@ document.addEventListener("DOMContentLoaded", () => {
   populateGeneralInfo();
   setupScrollAnimations();
 });
+
+document.getElementById("download-cv").addEventListener("click", function () {
+  // Select the element you want to convert to PDF
+  const element = document.getElementById("cv-section"); // Replace with your section's ID
+
+  // Configure html2pdf options
+  const options = {
+    margin: [0.5, 0.5, 0.5, 0.5], // Margins in inches (top, left, bottom, right)
+    filename: `Hrushik_Perumalla_CV_${new Date().toISOString().slice(0, 10)}.pdf`, // Dynamic filename with date
+    image: { type: "jpeg", quality: 0.98 }, // High-quality JPEG images
+    html2canvas: { scale: 4, useCORS: true }, // Higher scale for better resolution
+    jsPDF: { unit: "in", format: "a4", orientation: "portrait" }, // A4 portrait layout
+    pagebreak: { mode: ["avoid-all", "css", "legacy"] }, // Avoid page breaks inside elements
+  };
+
+  // Generate and save the PDF
+  html2pdf().set(options).from(element).save();
+});
+
