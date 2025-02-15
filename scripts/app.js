@@ -6,7 +6,7 @@
 const experienceData = [
   {
     company: "Siemens AG, Erlangen, Germany",
-    position: "Data Engineer",
+    position: "Data Scientist / Analyst (part-time)",
     duration: "Aug 2022 - December 2024",
     responsibilities: [
       "Designed, developed, and deployed custom Power Apps and Power BI solutions, utilizing DAX to create complex data models and perform advanced data analysis, resulting in improved business insights and decision-making capabilities.",
@@ -38,11 +38,31 @@ const experienceData = [
 
 // Academic Profile
 const educationData = [
-  { institution: "Gisma University of Applied Science", location: "Potsdam, Germany" },
-  { institution: "K L University", location: "Vijayawada, India" },
-  { institution: "Narayana Junior College", location: "Vijayawada, India" },
-  { institution: "Narayana E.M. High School", location: "Vijayawada, India" }
-];
+  {
+    course: "Masters in Data Science, AI, Digital Business",
+    institution: "Gisma University of Applied Science",
+    location: "Potsdam, Germany",
+    year: "March 2025"
+  },
+  {
+    course: "Bachelor of Technology in Computer Science",
+    institution: "K L University",
+    location: "Vijayawada, India",
+    year: "March 2019"
+  },
+  {
+    course: "Intermediate in MPC (Maths, Physics, Chemistry)",
+    institution: "Narayana Junior College",
+    location: "Vijayawada, India",
+    year: "May 2015"
+  },
+  {
+    course: "High School",
+    institution: "Narayana E.M. High School",
+    location: "Vijayawada, India",
+    year: "May 2013"
+  }
+]
 
 // Industrial Training
 const trainingData = [
@@ -89,15 +109,15 @@ const projectsData = [
 
 // Skill Set (Percentage indicates proficiency)
 const skillsData = [
-  { skill: "Java", level: 80 },
-  { skill: "SQL", level: 90 },
-  { skill: "PLSQL", level: 85 },
-  { skill: "Python", level: 90 },
-  { skill: "Machine Learning", level: 85 },
-  { skill: "HTML/CSS", level: 80 },
-  { skill: "DAX", level: 70 },
-  { skill: "Snowflake", level: 80 },
-  { skill: "Cloud Administration", level: 80 }
+  {skill: "Java", level: 80},
+  {skill: "SQL", level: 90},
+  {skill: "PLSQL", level: 85},
+  {skill: "Python", level: 90},
+  {skill: "Machine Learning", level: 85},
+  {skill: "HTML/CSS", level: 80},
+  {skill: "DAX", level: 70},
+  {skill: "Snowflake", level: 80},
+  {skill: "Cloud Administration", level: 80}
 ];
 
 // Workshops, Seminars & Certifications
@@ -140,14 +160,20 @@ function populateExperience() {
   });
 }
 
+// Function to Populate Education Section
 function populateEducation() {
   const eduList = document.getElementById("education-list");
   educationData.forEach(edu => {
     const li = document.createElement("li");
-    li.innerHTML = `<strong>${edu.institution}</strong> - ${edu.location}`;
+    li.innerHTML = `
+      <strong>${edu.course}</strong><br>
+      ${edu.institution} - ${edu.location}<br>
+      <span class="graduation-year">Graduated: ${edu.year}</span>
+    `;
     eduList.appendChild(li);
   });
 }
+
 
 function populateTraining() {
   const trainingList = document.getElementById("training-list");
@@ -239,7 +265,7 @@ function setupScrollAnimations() {
         entry.target.classList.add("animate");
       }
     });
-  }, { threshold: 0.1 });
+  }, {threshold: 0.1});
 
   document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
@@ -269,13 +295,40 @@ document.getElementById("download-cv").addEventListener("click", function () {
   const options = {
     margin: [0.5, 0.5, 0.5, 0.5], // Margins in inches (top, left, bottom, right)
     filename: `Hrushik_Perumalla_CV_${new Date().toISOString().slice(0, 10)}.pdf`, // Dynamic filename with date
-    image: { type: "jpeg", quality: 0.98 }, // High-quality JPEG images
-    html2canvas: { scale: 4, useCORS: true }, // Higher scale for better resolution
-    jsPDF: { unit: "in", format: "a4", orientation: "portrait" }, // A4 portrait layout
-    pagebreak: { mode: ["avoid-all", "css", "legacy"] }, // Avoid page breaks inside elements
+    image: {type: "jpeg", quality: 0.98}, // High-quality JPEG images
+    html2canvas: {scale: 4, useCORS: true}, // Higher scale for better resolution
+    jsPDF: {unit: "in", format: "a4", orientation: "portrait"}, // A4 portrait layout
+    pagebreak: {mode: ["avoid-all", "css", "legacy"]}, // Avoid page breaks inside elements
   };
 
   // Generate and save the PDF
   html2pdf().set(options).from(element).save();
 });
 
+
+  const downloadBtn = document.getElementById('download-cv');
+  const popup = document.getElementById('downloadPopup');
+  const confirmBtn = document.getElementById('confirmDownload');
+  const cancelBtn = document.getElementById('cancelDownload');
+
+  downloadBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  popup.style.display = 'block';
+});
+
+  confirmBtn.addEventListener('click', () => {
+  // Replace with actual PDF path
+  window.location.href = 'path/to/cv.pdf';
+  popup.style.display = 'none';
+});
+
+  cancelBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+  // Close when clicking outside
+  window.addEventListener('click', (e) => {
+  if (e.target === popup) {
+  popup.style.display = 'none';
+}
+});
