@@ -233,3 +233,20 @@ body {
     flex-direction: column;
   }
 }
+.linkedin-btn {
+  background-color: #0077B5; /* LinkedIn blue */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.linkedin-btn i {
+  margin-right: 8px;
+}
+
+.linkedin-btn:hover {
+  background-color: #005582; /* Darker blue on hover */
+}

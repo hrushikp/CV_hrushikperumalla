@@ -162,10 +162,14 @@ function populatePublication() {
   const publicationList = document.getElementById("publication-list");
   publicationData.forEach(pub => {
     const li = document.createElement("li");
-    li.innerHTML = `<strong>${pub.title}</strong> - ${pub.publication} (${pub.issue})`;
+    li.innerHTML = `
+      <strong>${pub.title}</strong> - ${pub.publication} (${pub.issue}) 
+      <a href="${pub.link}" target="_blank" class="btn btn-primary">View Publication</a>
+    `;
     publicationList.appendChild(li);
   });
 }
+
 
 function populateProjects() {
   const projectsGrid = document.getElementById("projects-grid");
