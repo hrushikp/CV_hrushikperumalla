@@ -287,23 +287,83 @@ document.addEventListener("DOMContentLoaded", () => {
   setupScrollAnimations();
 });
 
-document.getElementById("download-cv").addEventListener("click", function () {
-  // Select the element you want to convert to PDF
-  const element = document.getElementById("cv-section"); // Replace with your section's ID
+document.getElementById("download-cv").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  // Show loading state
+  const originalHtml = this.innerHTML;
+  this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
 
   // Configure html2pdf options
   const options = {
-    margin: [0.5, 0.5, 0.5, 0.5], // Margins in inches (top, left, bottom, right)
-    filename: `Hrushik_Perumalla_CV_${new Date().toISOString().slice(0, 10)}.pdf`, // Dynamic filename with date
-    image: {type: "jpeg", quality: 0.98}, // High-quality JPEG images
-    html2canvas: {scale: 4, useCORS: true}, // Higher scale for better resolution
-    jsPDF: {unit: "in", format: "a4", orientation: "portrait"}, // A4 portrait layout
-    pagebreak: {mode: ["avoid-all", "css", "legacy"]}, // Avoid page breaks inside elements
+    margin: [0.3, 0.5, 0.3, 0.5],
+    filename: `Hrushik_Perumalla_CV_${new Date().toISOString().slice(0, 10)}.pdf`,
+    image: {
+      type: "jpeg",
+      quality: 0.95,
+      useCORS: true
+    },
+    html2canvas: {
+      scale: 2, // Optimal balance between quality and performance
+      letterRendering: true,
+      useCORS: true,
+      allowTaint: true,
+      logging: true
+    },
+    jsPDF: {
+      unit: "in",
+      format: "a4",
+      orientation: "portrait",
+      compressPDF: true
+    },
+    pagebreak: {
+      mode: ['css'],
+      before: '.page-break'
+    }
   };
 
-  // Generate and save the PDF
-  html2pdf().set(options).from(element).save();
+  // Clone element to prevent layout shifts
+  const element = document.getElementById("cv-section").cloneNode(true);
+
+  // Add print-specific styling
+  const style = document.createElement('style');
+  style.innerHTML = `
+    @media print {
+      body { -webkit-print-color-adjust: exact; }
+      .section-break { page-break-before: always; }
+      .avoid-break { break-inside: avoid; }
+    }
+    img { max-width: 100% !important; }
+    * { box-sizing: border-box; }
+  `;
+  element.prepend(style);
+
+  // Generate PDF
+  html2pdf()
+    .set(options)
+    .from(element)
+    .toPdf()
+    .get('pdf')
+    .then(pdf => {
+      // Add footer
+      const totalPages = pdf.internal.getNumberOfPages();
+      for(let i = 1; i <= totalPages; i++) {
+        pdf.setPage(i);
+        pdf.setFontSize(8);
+        pdf.text(`Generated on ${new Date().toLocaleDateString()} - Page ${i} of ${totalPages}`,
+          pdf.internal.pageSize.width - 5.5,
+          pdf.internal.pageSize.height - 0.5,
+          { align: 'right' }
+        );
+      }
+    })
+    .save()
+    .finally(() => {
+      // Restore button state
+      this.innerHTML = originalHtml;
+    });
 });
+
 
 
   const downloadBtn = document.getElementById('download-cv');
