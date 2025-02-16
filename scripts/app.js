@@ -11,6 +11,7 @@ const experienceData = [
     responsibilities: [
       "Designed, developed, and deployed custom Power Apps and Power BI solutions, utilizing DAX to create complex data models and perform advanced data analysis, resulting in improved business insights and decision-making capabilities.",
       "Leveraged machine learning capabilities in Azure to develop predictive models, driving business growth through data-driven decision-making and process optimization.",
+      "Built and managed ETL pipelines to extract, transform, and load data from multiple sources into centralized repositories, ensuring data quality and consistency for downstream analytics and machine learning workflows.",
       "Managed and maintained cloud administration tasks across multiple platforms, including GCP and AWS, ensuring high availability, scalability, and security of cloud-based data storage and integration solutions, including Snowflake and SharePoint sites."
     ]
   },
