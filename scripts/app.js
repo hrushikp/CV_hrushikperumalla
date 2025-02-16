@@ -33,6 +33,14 @@ const experienceData = [
       "Managed and maintained large datasets in Oracle Database (11g, 20c), performing complex data analysis, troubleshooting, and optimization to ensure data accuracy, integrity, and system performance, and updated and maintained existing software to ensure seamless operations.",
       "Worked as Business Continuity Manager, developing and implementing comprehensive continuity plans, conducting risk assessments, and providing training to ensure seamless project operations and minimize downtime in the event of disruptions or outages, ensuring business continuity and minimizing revenue loss."
     ]
+  },
+     {
+    company: "Scrunchies Hub, Vijayawada, India",
+    position: "Partner",
+    duration: "June 2021 - Present",
+    responsibilities: [
+    ],
+       link:"https://www.scrunchieshub.com"
   }
 ];
 
@@ -96,15 +104,34 @@ const publicationData = [
 // Project Profile
 const projectsData = [
   {
-    title: "Scrunchies Hub",
-    description: "Developed a website for a startup including logo design, sales strategy, and CRM management. Currently working as Managing Partner.",
-    link: "http://www.scrunchieshub.com"
-  },
-  {
     title: "Gym Application",
     description: "Created a machine learning-based application to predict exercise and diet plans using user data (age, weight, height).",
-    link: ""
-  }
+    link: "https://github.com/hrushikp/heroku-apps"
+  },
+  {
+    title: "House Price Prediction",
+    description: "NEED TO UPDATE",
+    link: "https://github.com/hrushikp/house_price_detection"
+  },
+  {
+    title: "Drowsyness Detection",
+    description: "NEED TO UPDATE",
+    link: "https://github.com/hrushikp/Drowsyness_Detection"
+  },
+     {
+    title: "Ecommerce Data Reviews",
+    description: "NEED TO UPDATE",
+    link: "https://github.com/hrushikp/e-commerce_data_reviews"
+  },
+     {
+    title: "Sales Data Prediction",
+    description: "NEED TO UPDATE",
+    link: "https://github.com/hrushikp/Sales_data_prediction/tree/main"
+  },
+
+
+
+
 ];
 
 // Skill Set (Percentage indicates proficiency)
@@ -146,19 +173,26 @@ const generalInfoData = [
 
 function populateExperience() {
   const timeline = document.getElementById("experience-timeline");
+  timeline.innerHTML = ''; // Clear existing content before rendering
+
   experienceData.forEach(exp => {
     const item = document.createElement("div");
     item.className = "timeline-item fade-in";
+
     item.innerHTML = `
       <h3>${exp.position} @ ${exp.company}</h3>
       <p class="duration">${exp.duration}</p>
       <ul>
         ${exp.responsibilities.map(res => `<li>${res}</li>`).join("")}
       </ul>
+      ${exp.link && exp.link !== "na" ? 
+        `<a href="${exp.link}" target="_blank" class="btn btn-primary">View</a>` : ""}
     `;
+
     timeline.appendChild(item);
   });
 }
+
 
 // Function to Populate Education Section
 function populateEducation() {
