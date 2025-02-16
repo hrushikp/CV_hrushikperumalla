@@ -111,10 +111,10 @@ const publicationData = [
     link: "https://www.ijitee.org/wp-content/uploads/papers/v8i4/D2668028419.pdf"
   },
   {
-    title: "Hybrid approach for securing IOT DEVICES",
-    publication: "International Journal of Innovative Technology and Exploring Engineering (IJITEE)",
-    issue: "Vol-8, Issue-4, Feb 2019",
-    link: "https://www.ijitee.org/wp-content/uploads/papers/v8i4/D2668028419.pdf"
+    title: "Leveraging Artificial Intelligence for Sustainable Business Innovation: Advancing Data Management and User Engagement in European Enterprises",
+    publication: "",
+    issue: "",
+    link: ""
   },
 
 ];
