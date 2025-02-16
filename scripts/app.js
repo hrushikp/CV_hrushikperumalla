@@ -40,6 +40,16 @@ const experienceData = [
     position: "Partner",
     duration: "June 2021 - Present",
     responsibilities: [
+        "Oversee the overall operations and management of Scrunchies Hub, ensuring smooth day-to-day functioning.",
+      "Develop and implement business strategies to drive sales growth and enhance customer satisfaction.",
+      "Design and manage the e-commerce website, ensuring seamless user experience and efficient functionality.",
+      "Lead product development efforts, including the introduction of new scrunchie patterns and customization options to meet market demands.",
+      "Collaborate with suppliers to ensure the availability of high-quality materials for production.",
+      "Manage marketing campaigns, including social media promotions and customer engagement initiatives, to boost brand visibility.",
+      "Analyze sales data to identify trends and make data-driven decisions for inventory management and demand forecasting.",
+      "Build and maintain relationships with customers by addressing inquiries, resolving issues, and ensuring a positive shopping experience.",
+      "Monitor financial performance, including budgeting, expense control, and profit optimization.",
+      "Stay updated with market trends to identify new opportunities for business growth and innovation."
     ],
        link:"https://www.scrunchieshub.com"
   }
@@ -99,41 +109,45 @@ const publicationData = [
     publication: "International Journal of Innovative Technology and Exploring Engineering (IJITEE)",
     issue: "Vol-8, Issue-4, Feb 2019",
     link: "https://www.ijitee.org/wp-content/uploads/papers/v8i4/D2668028419.pdf"
-  }
+  },
+  {
+    title: "Hybrid approach for securing IOT DEVICES",
+    publication: "International Journal of Innovative Technology and Exploring Engineering (IJITEE)",
+    issue: "Vol-8, Issue-4, Feb 2019",
+    link: "https://www.ijitee.org/wp-content/uploads/papers/v8i4/D2668028419.pdf"
+  },
+
 ];
 
 // Project Profile
 const projectsData = [
   {
     title: "Gym Application",
-    description: "Created a machine learning-based application to predict exercise and diet plans using user data (age, weight, height).",
+    description: "Developed a machine learning-based application hosted on Heroku to predict personalized exercise and diet plans using user input data such as age, weight, and height. Integrated predictive models to enhance user health insights.",
     link: "https://github.com/hrushikp/heroku-apps"
   },
   {
     title: "House Price Prediction",
-    description: "NEED TO UPDATE",
+    description: "Built a machine learning model to predict house prices based on various features such as location, size, and amenities. The project demonstrates data preprocessing, feature engineering, and predictive modeling techniques.",
     link: "https://github.com/hrushikp/house_price_detection"
   },
   {
-    title: "Drowsyness Detection",
-    description: "NEED TO UPDATE",
+    title: "Drowsiness Detection",
+    description: "Implemented a real-time drowsiness detection system using computer vision techniques. The project uses OpenCV and machine learning to monitor driver alertness and prevent accidents caused by fatigue.",
     link: "https://github.com/hrushikp/Drowsyness_Detection"
   },
-     {
+  {
     title: "Ecommerce Data Reviews",
-    description: "NEED TO UPDATE",
+    description: "Analyzed e-commerce review datasets to extract meaningful insights using natural language processing (NLP). The project includes sentiment analysis and visualization of customer feedback for business decision-making.",
     link: "https://github.com/hrushikp/e-commerce_data_reviews"
   },
-     {
+  {
     title: "Sales Data Prediction",
-    description: "NEED TO UPDATE",
+    description: "Developed a sales forecasting model using historical sales data. The project includes data cleaning, feature selection, and predictive modeling to assist businesses in demand planning and inventory management.",
     link: "https://github.com/hrushikp/Sales_data_prediction/tree/main"
-  },
-
-
-
-
+  }
 ];
+
 
 // Skill Set (Percentage indicates proficiency)
 const skillsData = [
