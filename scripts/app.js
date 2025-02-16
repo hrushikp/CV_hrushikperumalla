@@ -113,7 +113,7 @@ const publicationData = [
   {
     title: "Leveraging Artificial Intelligence for Sustainable Business Innovation: Advancing Data Management and User Engagement in European Enterprises",
     publication: "",
-    issue: "",
+    issue: "yet to UPDATE from publication team",
     link: ""
   },
 
