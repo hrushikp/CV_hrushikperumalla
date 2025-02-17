@@ -117,10 +117,10 @@ const publicationData = [
     link: ""
   },
     {
-    title: "Virtual Competencies in ",
+    title: "Behavioral Competencies in Virtual Teams ",
     publication: "",
-    issue: "yet to UPDATE from publication team",
-    link: ""
+    issue: "Medium",
+    link: "https://medium.com/@hrushikperumalla/behavioral-competencies-in-virtual-teams-aba0e8cb500a"
   }
 
 ];
