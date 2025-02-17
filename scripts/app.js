@@ -35,7 +35,7 @@ const experienceData = [
       "Worked as Business Continuity Manager, developing and implementing comprehensive continuity plans, conducting risk assessments, and providing training to ensure seamless project operations and minimize downtime in the event of disruptions or outages, ensuring business continuity and minimizing revenue loss."
     ]
   },
-     {
+  {
     company: "Scrunchies Hub, Vijayawada, India",
     position: "Partner",
     duration: "June 2021 - Present",
@@ -116,6 +116,12 @@ const publicationData = [
     issue: "yet to UPDATE from publication team",
     link: ""
   },
+    {
+    title: "Virtual Competencies in ",
+    publication: "",
+    issue: "yet to UPDATE from publication team",
+    link: ""
+  }
 
 ];
 
@@ -441,3 +447,10 @@ document.getElementById("download-cv").addEventListener("click", function (e) {
   popup.style.display = 'none';
 }
 });
+
+
+
+
+
+
+  
