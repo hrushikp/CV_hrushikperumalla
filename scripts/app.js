@@ -9,9 +9,9 @@ const experienceData = [
     position: "Data Scientist / Analyst (part-time)",
     duration: "Aug 2022 - December 2024",
     responsibilities: [
-      "Designed, developed, and deployed custom Power Apps and Power BI solutions, utilizing DAX to create complex data models and perform advanced data analysis, resulting in improved business insights and decision-making capabilities.",
-      "Leveraged machine learning capabilities in Azure to develop predictive models, driving business growth through data-driven decision-making and process optimization.",
-      "Built and managed ETL pipelines to extract, transform, and load data from multiple sources into centralized repositories, ensuring data quality and consistency for downstream analytics and machine learning workflows.",
+      "Designed, developed, and deployed custom Power Apps and Power BI solutions, utilising DAX to create complex data models and perform advanced data analysis, resulting in improved business insights and decision-making capabilities.",
+      "Leveraged machine learning capabilities in Azure to develop predictive models, driving business growth through data-driven decision-making and process optimisation.",
+      "Built and managed ETL pipelines to extract, transform, and load data from multiple sources into centralised repositories, ensuring data quality and consistency for downstream analytics and machine learning workflows.",
       "Managed and maintained cloud administration tasks across multiple platforms, including GCP and AWS, ensuring high availability, scalability, and security of cloud-based data storage and integration solutions, including Snowflake and SharePoint sites."
     ]
   },
@@ -22,7 +22,7 @@ const experienceData = [
     responsibilities: [
       "Developed and maintained the Ai4Gov project website as a Web Developer, ensuring seamless user experience and efficient functionality.",
       "Provided strategic assistance for the development of Ai4Gov, contributing to the project's overall success and growth.",
-      "Utilized technical expertise to support the integration of Artificial Intelligence for Public Services, enhancing the project's impact and reach."
+      "Utilised technical expertise to support the integration of Artificial Intelligence for Public Services, enhancing the project's impact and reach."
     ]
   },
   {
@@ -30,9 +30,9 @@ const experienceData = [
     position: "Developer / Business Continuity Manager",
     duration: "Jun 2019 - Aug 2021",
     responsibilities: [
-      "Designed, developed, and deployed scalable applications for clients using agile methodology, collaborating with cross-functional teams to deliver high-quality results that met client requirements and expectations, utilizing Java, SQL, and PLSQL skills, and leveraging Eclipse, Service Now, Oracle DB, and Siebel CRM tools.",
-      "Managed and maintained large datasets in Oracle Database (11g, 20c), performing complex data analysis, troubleshooting, and optimization to ensure data accuracy, integrity, and system performance, and updated and maintained existing software to ensure seamless operations.",
-      "Worked as Business Continuity Manager, developing and implementing comprehensive continuity plans, conducting risk assessments, and providing training to ensure seamless project operations and minimize downtime in the event of disruptions or outages, ensuring business continuity and minimizing revenue loss."
+      "Designed, developed, and deployed scalable applications for clients using agile methodology, collaborating with cross-functional teams to deliver high-quality results that met client requirements and expectations, utilising Java, SQL, and PLSQL skills, and leveraging Eclipse, Service Now, Oracle DB, and Siebel CRM tools.",
+      "Managed and maintained large datasets in Oracle Database (11g, 20c), performing complex data analysis, troubleshooting, and optimisation to ensure data accuracy, integrity, and system performance, and updated and maintained existing software to ensure seamless operations.",
+      "Worked as Business Continuity Manager, developing and implementing comprehensive continuity plans, conducting risk assessments, and providing training to ensure seamless project operations and minimise downtime in the event of disruptions or outages, ensuring business continuity and minimising revenue loss."
     ]
   },
   {
@@ -43,12 +43,12 @@ const experienceData = [
         "Oversee the overall operations and management of Scrunchies Hub, ensuring smooth day-to-day functioning.",
       "Develop and implement business strategies to drive sales growth and enhance customer satisfaction.",
       "Design and manage the e-commerce website, ensuring seamless user experience and efficient functionality.",
-      "Lead product development efforts, including the introduction of new scrunchie patterns and customization options to meet market demands.",
+      "Lead product development efforts, including the introduction of new scrunchie patterns and customisation options to meet market demands.",
       "Collaborate with suppliers to ensure the availability of high-quality materials for production.",
       "Manage marketing campaigns, including social media promotions and customer engagement initiatives, to boost brand visibility.",
-      "Analyze sales data to identify trends and make data-driven decisions for inventory management and demand forecasting.",
+      "Analyse sales data to identify trends and make data-driven decisions for inventory management and demand forecasting.",
       "Build and maintain relationships with customers by addressing inquiries, resolving issues, and ensuring a positive shopping experience.",
-      "Monitor financial performance, including budgeting, expense control, and profit optimization.",
+      "Monitor financial performance, including budgeting, expense control, and profit optimisation.",
       "Stay updated with market trends to identify new opportunities for business growth and innovation."
     ],
        link:"https://www.scrunchieshub.com"
@@ -88,7 +88,7 @@ const trainingData = [
   {
     program: "BEPEC Solutions Training",
     duration: "May 2019",
-    details: "Development of Web Machine Learning Apps; using Random Forest Algorithm; prediction visualization in Python."
+    details: "Development of Web Machine Learning Apps; using Random Forest Algorithm; prediction visualisation in Python."
   },
   {
     program: "Cognizant Internship",
@@ -98,7 +98,7 @@ const trainingData = [
   {
     program: "Golars Networks Training",
     duration: "May 2017 - Jun 2017",
-    details: "Development of modules for IoT device security with encryption and predictive analysis visualization."
+    details: "Development of modules for IoT device security with encryption and predictive analysis visualisation."
   }
 ];
 
@@ -129,7 +129,7 @@ const publicationData = [
 const projectsData = [
   {
     title: "Gym Application",
-    description: "Developed a machine learning-based application hosted on Heroku to predict personalized exercise and diet plans using user input data such as age, weight, and height. Integrated predictive models to enhance user health insights.",
+    description: "Developed a machine learning-based application hosted on Heroku to predict personalised exercise and diet plans using user input data such as age, weight, and height. Integrated predictive models to enhance user health insights.",
     link: "https://github.com/hrushikp/heroku-apps"
   },
   {
@@ -144,7 +144,7 @@ const projectsData = [
   },
   {
     title: "Ecommerce Data Reviews",
-    description: "Analyzed e-commerce review datasets to extract meaningful insights using natural language processing (NLP). The project includes sentiment analysis and visualization of customer feedback for business decision-making.",
+    description: "Analysed e-commerce review datasets to extract meaningful insights using natural language processing (NLP). The project includes sentiment analysis and visualisation of customer feedback for business decision-making.",
     link: "https://github.com/hrushikp/e-commerce_data_reviews"
   },
   {
