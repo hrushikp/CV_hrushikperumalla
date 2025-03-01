@@ -545,3 +545,24 @@ body {
     gap: 10px;
   }
 }
+
+/* Reset default margins and paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Prevent horizontal scrolling due to overflow */
+}
+
+/* Ensure containers don't exceed the viewport */
+.container,
+.wrapper,
+.page-content {
+  max-width: 100%;
+  box-sizing: border-box;  /* Include padding and border in the element's total width */
+}
+
+/* Optional: Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
