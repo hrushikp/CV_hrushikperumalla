@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hrushik Perumalla | CV</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.11.0/html2pdf.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hrushik Perumalla | CV</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Only one version of html2pdf is needed -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.11.0/html2pdf.bundle.min.js"
+      integrity="sha512-...your-integrity-value..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-</head>
-<body>
-<div class="under-development-section">
-  <p class="sliding-text">This page is currently under development. Please refer to the existing information for now. Updates will be available soon. Thank you for your patience and understanding!</p>
-</div>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container hero-container">
-      <!-- Left Column: Profile Card -->
-      <div class="profile-card">
-        <img src="assets/profile.JPEG" alt="Profile Photo" class="profile-photo">
-        <h2>Hrushik Perumalla</h2>
-        <p class="designation">Data Scientist / Analyst</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/hrushik-perumalla-57b295194/" target="_blank" class="social-link">
-            <i class="fab fa-linkedin"></i>
-          </a>
+  <body>
+    <div class="under-development-section">
+      <p class="sliding-text">
+        This page is currently under development. Please refer to the existing
+        information for now. Updates will be available soon. Thank you for your
+        patience and understanding!
+      </p>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-container">
+        <!-- Profile Card -->
+        <div class="profile-card">
+          <img src="assets/profile.JPEG" alt="Profile Photo" class="profile-photo" />
+          <h2>Hrushik Perumalla</h2>
+          <p class="designation">Data Scientist / Analyst</p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/hrushik-perumalla-57b295194/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Right Column: Introduction -->
-      <div class="intro">
-        <h1>Hello</h1>
-        <p>Here's who I am & what I do.</p>
-        <div class="intro-buttons">
-          <a onclick= "scrollToSection('experience')" href="#about" class="btn btn-primary">About Me</a>
-          <a href="#" class="btn btn-primary" id="download-cv"><i class="fas fa-download"></i> Download CV</a>
+        <!-- Introduction Section -->
+        <div class="intro">
+          <h1>Hello</h1>
+          <p>Here's who I am &amp; what I do.</p>
+          <div class="intro-buttons">
+            <a
+              onclick="scrollToSection('experience')"
+              href="#about"
+              class="btn btn-primary"
+              >About Me</a
+            >
+            <a href="#" class="btn btn-primary" id="download-cv"
+              ><i class="fas fa-download"></i> Download CV</a
+            >
+          </div>
 
+          <!-- Popup for Download (if needed) -->
           <div id="downloadPopup" class="popup">
-  <div class="popup-content">
-    <h3>Confirm Download</h3>
-    <p>My apologies,Download cv is not working properly, please refer to the main page, Thanks for understanding</p>
-    <div class="popup-buttons">
-      <button id="confirmDownload" class="btn btn-primary">Download</button>
-      <button id="cancelDownload" class="btn btn-secondary">Cancel</button>
-    </div>
-  </div>
-</div>
+            <div class="popup-content">
+              <h3>Confirm Download</h3>
+              <p>
+                My apologies, Download CV is not working properly. Please refer
+                to the main page. Thanks for your understanding.
+              </p>
+              <div class="popup-buttons">
+                <button id="confirmDownload" class="btn btn-primary">
+                  Download
+                </button>
+                <button id="cancelDownload" class="btn btn-secondary">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
 
+          <p class="description">
+            I'm a Data Scientist with expertise in Deep Learning, Natural Language Processing, Machine Learning, Data Analysis, and Cloud Computing. I specialize in delivering actionable insights and building scalable AI solutions.
+          </p>
         </div>
-        <p class="description">
-          I'm a Data Scientist with expertise in Deep Learning, Natural language processing, Machine learning, Data analysis, and Cloud computing. I specialize in delivering actionable insights and building scalable Ai solutions.
-        </p>
       </div>
-    </div>
-  </header>
+    </header>
 
   <!-- Main Content -->
   <main id="cv-section" class="cv-container">
@@ -150,6 +181,7 @@
   <script src="scripts/app.js"></script>
 </body>
 </html>
+
 
 
 
