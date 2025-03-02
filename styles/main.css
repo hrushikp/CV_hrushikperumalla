@@ -14,6 +14,10 @@
     padding: 0;
     overflow-x: auto ;
 }
+html, body {
+  overflow-x: hidden;
+}
+
 .header {
     position: fixed; /* If using fixed positioning */
     top: 0;
@@ -143,6 +147,24 @@ body {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
+.timeline-item ul {
+  list-style: none;  /* Remove default bullets */
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.timeline-item ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item ul li::before {
+  content: "- ";     /* Insert a dash followed by a space */
+  position: absolute;
+  left: 0;
+  color: var(--primary-color); /* You can choose any color */
+}
+
 
 /* Timeline Styles */
 .timeline {
@@ -350,6 +372,7 @@ body {
     .cv-section {
         font-size: 11pt !important;
         line-height: 1.4 !important;
+        text-align: center !important;
     }
 
     .btn, nav {
