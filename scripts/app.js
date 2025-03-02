@@ -449,7 +449,24 @@ document.getElementById("download-cv").addEventListener("click", function (e) {
 });
 
 
+document.getElementById('download-cv').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor click behavior
 
+    // Select the element to be converted to PDF
+    const element = document.getElementById('cv-section'); // Make sure this ID matches your CV section
+
+    // Options for html2pdf
+    const options = {
+        margin:       1,
+        filename:     'Hrushik_Perumalla_CV.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+
+    // Generate PDF
+    html2pdf().from(element).set(options).save();
+});
 
 
 
