@@ -500,3 +500,178 @@ img {
         animation-duration: 15s;
     }
 }
+
+
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #005582, var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 40px 20px; /* Adjusted padding for better mobile view */
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center;
+}
+
+.profile-card {
+    margin-bottom: 20px; /* Space between profile card and intro */
+}
+
+.intro {
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.intro h1 {
+    font-size: 2.5rem; /* Adjusted font size for mobile */
+}
+
+.intro-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+.btn {
+    width: 100%; /* Make buttons full width */
+    padding: 10px; /* Increased padding for better touch targets */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .hero-container {
+        flex-direction: column; /* Ensure vertical stacking */
+        align-items: center; /* Center align items */
+    }
+
+    .profile-card {
+        width: 100%; /* Full width for profile card */
+        padding: 20px; /* Padding for profile card */
+    }
+
+    .intro h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .intro p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+
+    .intro-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Space between buttons */
+    }
+
+    .btn {
+        width: 10%; /* Full width for buttons */
+        center: var();
+    }
+}
+
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Center the text and icon */
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: var(--transition);
+    font-weight: 600;
+    margin: 5px 0; /* Margin for spacing between buttons */
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Optional: limit max width for larger screens */
+    background-color: var(--primary-color); /* Default background color */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* Button Hover Effects */
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9; /* Slightly fade on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro-buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Space between buttons */
+    }
+
+    .btn {
+        width: 100%; /* Full width for buttons */
+        padding: 12px; /* Consistent padding */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
+
+/* Button Container */
+.intro-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Center the text and icon */
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: var(--transition);
+    font-weight: 600;
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Optional: limit max width for larger screens */
+    background-color: var(--primary-color); /* Default background color */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* Button Hover Effects */
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9; /* Slightly fade on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%; /* Full width for buttons */
+        padding: 12px; /* Consistent padding */
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}
+
