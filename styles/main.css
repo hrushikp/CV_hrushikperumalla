@@ -13,11 +13,19 @@
     margin: 0;
     padding: 0;
 }
+.header {
+    position: fixed; /* If using fixed positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
 
 body {
     font-family: var(--font-family);
     line-height: 1.6;
     color: var(--dark-color);
+    overflow: auto;
 }
 
 /* Container */
@@ -668,10 +676,18 @@ img {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .btn {
-        width: 100%; /* Full width for buttons */
-        padding: 12px; /* Consistent padding */
-        font-size: 1rem; /* Adjust font size for readability */
+    .container {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .hero {
+        padding: 30px 10px; /* Adjust padding for mobile */
     }
 }
+
+.profile-card {
+    margin: 20px 0; /* Ensure margins are not too large */
+}
+
 
