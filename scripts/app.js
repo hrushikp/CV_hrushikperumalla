@@ -179,7 +179,6 @@ const workshopsData = [
   "Certified Jr. Developer/App Analyst AD & AVM (Cognizant Academy), Jan 2020",
   "Certified Machine Learning Engineer (Bepec Solutions), May 2019",
   "Certification in Natural Language Processing (KL University), May 2018"
-  "Introduction to Data Science for Business (Future learn) "
 ];
 
 // General Information
