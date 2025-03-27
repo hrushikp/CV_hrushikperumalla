@@ -113,8 +113,14 @@ const publicationData = [
   {
     title: "Leveraging Artificial Intelligence for Sustainable Business Innovation: Advancing Data Management and User Engagement in European Enterprises",
     publication: "",
-    issue: "yet to UPDATE from publication team",
+    issue: "Link yet to UPDATE from publication team",
     link: ""
+  },
+     {
+    title: "Emotion Detection in Speech: A Comparative Analysis of CNN-LSTM Hybrid Models Using the EmoDB Dataset",
+    publication: "",
+    issue: "Link yet to update",
+    link: "https://medium.com/@hrushikperumalla/behavioral-competencies-in-virtual-teams-aba0e8cb500a"
   },
     {
     title: "Behavioral Competencies in Virtual Teams ",
@@ -178,7 +184,10 @@ const workshopsData = [
   "Certification on Artificial Intelligence (Cognizant Academy), Aug 2020",
   "Certified Jr. Developer/App Analyst AD & AVM (Cognizant Academy), Jan 2020",
   "Certified Machine Learning Engineer (Bepec Solutions), May 2019",
-  "Certification in Natural Language Processing (KL University), May 2018"
+  "Certification in Natural Language Processing (KL University), May 2018",
+  "MICROSOFT FUTURE READY: DATA SCIENCE RESEARCH METHODS USING PYTHON PROGRAMMING, CLOUDSWYFT GLOBAL SYSTEMS, INC",
+  "INTRODUCTION TO DATA ANALYTICS WITH PYTHON, FUTURELEARN",
+  "INTRODUCTION TO DATA SCIENCE FOR BUSINESS, FUTURELEARN"  
 ];
 
 // General Information
