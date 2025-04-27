@@ -16,7 +16,7 @@ const experienceData = [
     ]
   },
   {
-    company: "FAU, Erlangen, Germany",
+    company: "EELISA - European University at FAU, Erlangen.",
     position: "Strategic Assistance",
     duration: "Mar 2022 - Feb 2023",
     responsibilities: [
@@ -120,7 +120,7 @@ const publicationData = [
     title: "Emotion Detection in Speech: A Comparative Analysis of CNN-LSTM Hybrid Models Using the EmoDB Dataset",
     publication: "",
     issue: "Link yet to update",
-    link: "https://medium.com/@hrushikperumalla/behavioral-competencies-in-virtual-teams-aba0e8cb500a"
+    link: ""
   },
     {
     title: "Behavioral Competencies in Virtual Teams ",
