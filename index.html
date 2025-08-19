@@ -159,6 +159,50 @@
   </footer>
 
   <script src="scripts/app.js"></script>
+  <!-- Popup Modal -->
+<div id="update-popup" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+">
+  <div style="
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  ">
+    <h2>🚀 We've Moved!</h2>
+    <p>The site has been updated. Please visit our new website.</p>
+    <button onclick="redirectToNewSite()" style="
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+    ">Go to New Site</button>
+  </div>
+</div>
+
+<script>
+  // Show popup after page loads
+  window.onload = function() {
+    document.getElementById("update-popup").style.display = "flex";
+  };
+
+  // Redirect function
+  function redirectToNewSite() {
+    window.location.href = "https://your-new-site-url.com"; // 🔗 replace with your new site
+  }
+</script>
 </body>
 </html>
 
